@@ -65,7 +65,7 @@ function getBlogPostLoopHTML($post_per_page,$paged){
             }
 
             $thumb = get_the_post_thumbnail( $value->ID, 'thumbnail', array( 'class' => 'alignleft' ) );;
-            $permalink = get_the_permalink($value->ID);
+            $permalink = get_permalink($value->ID);
             $exp = wp_trim_words( $value->post_excerpt, 10, '...' );
             $con = wp_trim_words( $value->post_content, 10, '...' );
             if($thumb){
@@ -126,7 +126,7 @@ function getMyPagination($allPage,$post_per_page){
         $get_number_pages = ceil($allPage/$post_per_page);
     }
     $current_page = isset($_GET['pn']) ? $_GET['pn'] : 1;
-    $current_page_link = get_the_permalink($post->ID);
+    $current_page_link = get_permalink($post->ID);
     $form = '';
     $form .= '<div class="mypagination">';
 
