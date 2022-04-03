@@ -1,0 +1,211 @@
+.notice {
+    border: solid 1px rgb(255 105 0);
+    padding: 10px;
+    color: rgb(255 105 0);
+    border-left-width: 5px;
+}
+.clear{
+  clear: both;
+}
+.addblog-form h4 {
+    margin: 5px 0px;
+}
+.mypagination {
+    padding: 20px 0px;
+}
+.addblog-form h4{
+  margin:10px 0px;
+}
+.addblog-form hr {
+    margin: 20px 0px;
+}
+/* Full-width input fields */
+.addblog-form input[type=text], .addblog-form input[type=password], .addblog-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+      box-sizing: border-box;
+}
+
+
+.addblog-form textarea {
+  height: 120px;
+}
+
+.addblog-form input[type=text]:focus, .addblog-form input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.addblog-form hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button,.mybutton {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.addblog-form button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.addblog-form input[type="file"] {
+    display: none;
+}
+a.remove_img {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+.feature_img_div.showimg {
+    width: 220px;
+    position: relative;
+}
+.showimg .remove_img{
+  display: inline;
+}
+.custom-file-upload {
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    width: 220px;
+    float: left;
+    margin-right: 10px;
+    background-color: #ffffff;
+}
+p.rightlink {
+    text-align: right;
+}
+.mt-20{
+  margin-top: 20px;
+}
+span.upload_img {
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-top: solid 1px #d1d1d1;
+    background: #ebebeb;
+    color: #383838;
+    padding: 7px 0px;
+}
+label.custom-file-upload img {
+    max-width: 210px;
+    max-height: 210px;
+}
+img#feature_image_show{
+  display: none;
+}
+.showimg img#feature_image_show{
+  display: block;
+}
+.addblog-form .cancelbtn {
+    background-color: #f44336;
+    font-size: 22px;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    line-height: 54px;
+}
+button.addBlogBtn {
+    line-height: 54px;
+    font-size: 22px;
+    padding: 0;
+    font-weight: normal;
+    border: none;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .addBlogBtn {
+    float: left;
+    margin: 0;
+    width: 50%;
+    background: #04AA6D;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+/* Add padding to container elements */
+.addblog-form .container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.repeated_div:nth-child(2n) {
+    background-color: #e1e1e1;
+}
+.outer_div {
+    background: #ffffff;
+    border: solid 1px #cccccc;
+
+    display: block;
+    max-width: 80% !important;
+}
+.img_div {float: left;max-width: 200px;margin-right: 2%;width: 25%;}
+.content_div {float: right;width: 100%;}
+.have_img .content_div {float: right;width: 65%;}
+a.viewmore.mybutton {
+    float: right;
+    width: 180px;
+    text-align: center;
+}
+form#addblog_form textarea {
+    border: none;
+}
+.btns {
+    clear: both;
+}
+.repeated_div {
+    margin-bottom: 10px;
+    border-bottom: solid;
+    padding: 10px;
+}
+a.approvdone {
+    background-color: #005600;
+}
+a.approvpending {
+    background-color: #ff8100;
+}
+.mypagination li.active {
+    background-color: #1bb079;
+}
+.mypagination li.active a {
+    color: #ffffff;
+}
+.mypagination li {
+    display: inline;
+    background: #dddddd;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+a.viewmore.mybutton.approve {
+    margin-right: 10px;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .addBlogBtn {
+     width: 100%;
+  }
+}
